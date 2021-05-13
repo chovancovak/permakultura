@@ -1,0 +1,18 @@
+.intro-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1, 100px;
+      grid-template-columns: 1, 100px;
+  -ms-grid-rows: repeat 8, 150px;
+      grid-template-rows: repeat 8, 150px;
+}
+
+@media screen and (min-width: 400px) {
+  .intro-grid {
+    -ms-grid-columns: repeat 2, 100px;
+        grid-template-columns: repeat 2, 100px;
+    -ms-grid-rows: repeat 4, 150px;
+        grid-template-rows: repeat 4, 150px;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,60 @@
+.article{
+
+    margin: 0 $pad-mobile;
+    @media screen and (min-width: $tablet-size) { 
+        margin: 0 $pad-tablet;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        padding-right: 50px;
+        margin: 0 350px;
+    }   
+
+}
+//zde upravit nastavení, aby se vytvořila galerie pro články, kde je hodně fotek
+// .articles-divFoto {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .articles-divFoto img {
+//     padding: 20px 100px;
+
+// }
+
+.article-heading {
+    @media screen and (min-width: $PC-size) {
+        padding: 0 350px;
+        
+    }
+}
+.article-p{
+    padding: 10px 0;
+}
+
+.article__h3{
+    color: $quaternary-c;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.article__img{
+    border-radius: $radius_table;
+    margin-bottom: 10px;
+}
+
+.article_odkaz {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: $primary-c;
+    font-size: 22px;
+    padding-top: 20px;
+    
+}
+
+.article_odkaz:hover {
+    font-size: 24px;
+}

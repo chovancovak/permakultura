@@ -1,0 +1,116 @@
+
+
+
+.table-blog{
+    border: solid 1px $background-c;
+    background-color: $quaternary-c;
+    border-radius: $radius-table;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    @media screen and (min-width: $tablet-size) {
+        width: 700px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+
+}
+
+.table-blog__article{
+    @media screen and (min-width: $tablet-size) {
+        flex: 1 1 50%;
+    }
+}
+
+
+
+.table-blog__h3-box{
+    background-color: $tertiary-c;
+    border-radius: $radius-table $radius-table 0px 0px;
+    flex: 1 1 100%;
+}
+
+.table-blog__h3{
+    color: $septenary-c;
+    font-size: 23px;
+    text-align: center;
+}
+
+.table-blog__h4{
+    color: $background-c;
+    text-align: center;
+    padding: 0 8px;
+    text-decoration: none;
+
+
+    @media screen and (min-width: $tablet-size) {
+        height: 50px;
+        padding: 0px 20px;
+        margin: 20px 0px 7px 0px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        height: auto;
+        margin: 21px 0px;
+        padding: 5px;
+    }
+}
+
+.table-blog__article-link{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    color: $background-c;
+    font-size: 20px;
+}
+
+.table-blog__article-link:hover{
+    font-size: 23px;
+    color: $quinary-c;
+}
+
+.table-blog__img-box{
+    @media screen and (min-width: $tablet-size) {
+        height: 200px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        height: auto;
+        
+    }
+}
+
+.table-blog__img{
+    @media screen and (min-width: $tablet-size) {
+     
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 10px 10px;
+        border-radius: $radius-table;
+         
+       }
+
+    @media screen and (min-width: $PC-size) {
+        padding: 0;
+        object-fit: inherit;
+        width: 100%;
+        height: auto;
+        
+    }
+}
+

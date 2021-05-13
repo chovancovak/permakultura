@@ -1,0 +1,93 @@
+{% include "partials/page-top.njk" %}
+
+
+    <main class="main">
+        <h2>{{ title }}</h2>
+        
+        
+        <div class="grid-sablona">
+    
+            <div class="content">
+                {{ content | safe }}
+            </div>
+
+            <aside class="table-blog">
+
+                <div class="table-blog__h3-box">
+                    <h3 class= "table-blog__h3">Z blogu</h3>
+                </div>
+                
+                <div class="table-blog__article table-blog__article1">
+                   
+                    
+                    {% for clanek in collections.clanky | reverse %}
+                        
+                            {% if loop.index <=3 %} <!-- začátek podmínky, na kolik článků se má vypsat z kolekce-->
+                            <h4 class="table-blog__h4">
+                                <a class="table-blog__h4" href="{{ clanek.url }}">{{ clanek.data.title }}</a>
+                            </h4>
+
+                            <div class="table-blog__img-box">
+                                <img class="table-blog__img" src={{ clanek.data.picture }} alt={{ clanek.data.picture_title }}>
+                            </div>
+
+                            {% endif %} <!-- konec podmínky, na kolik článků se má vypsat z kolekce-->
+                        
+
+
+                    {% endfor %}
+                    
+                </div>
+                
+                <!--
+                
+        
+                
+                    
+                    <a class="table-blog__article-link" href="/article013">více</a>
+            
+                    <div class="table-blog__img-box">
+                        <img class="table-blog__img" src="/img/table_blog/04_Léto je pryč ....JPG" alt="larva šídla">
+                    </div>
+              
+
+                <div class="table-blog__article table-blog__article2">
+                    <h4 class="table-blog__h4">Voda pro zemi</h4>
+                    <a class="table-blog__article-link" href="/article012">více</a>
+            
+                    <div class="table-blog__img-box">
+                        <img class="table-blog__img" src="/img/table_blog/03_voda pro zemi.JPG" alt="potok pod stromy">
+                    </div>
+                </div>
+
+                <div class="table-blog__article table-blog__article3">
+                    <h4 class="table-blog__h4">Co nám může permakultura nabídnout v době globalizace a krizí</h4>
+                    <a class="table-blog__article-link" href="/article011">více</a>
+            
+                    <div class="table-blog__img-box">
+                        <img class="table-blog__img" class="table-blog__img" src="/img/table_blog/02_brambora přes celý svět.jpg" alt="brambora ve tvaru srdce, v pozadí mapa světa">
+                    </div>
+                </div>
+
+                <div class="table-blog__article table-blog__article4">    
+                    <h4 class="table-blog__h4">Chystáme se na rybníček svépomocí</h4>
+                    <a class="table-blog__article-link" href="/article010">více</a>
+        
+                    <div class="table-blog__img-box">
+                        <img class="table-blog__img"src="/img/table_blog/01_rybníček_přední strana mauálu_přiblížení.png" alt="manuál na stvabu jezírka">
+                    </div>
+                </div>
+
+                -->
+
+            </aside>
+
+          
+        
+        </div>
+
+    </main>
+
+    {% include "partials/page.bottom.njk" %}
+
+    

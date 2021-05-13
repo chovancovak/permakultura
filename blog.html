@@ -1,0 +1,119 @@
+---
+layout: layouts/sablona.njk
+---
+
+<div class="container-for-articles">
+
+    <h2 class="blog-container-title">Blog</h2>
+    
+    {% for clanek in collections.clanky | reverse %}
+
+    <div class="blog-container__article">
+        
+        <div class="blog-container__article-img">
+            <img class="table-blog__img" src={{ clanek.data.picture }} alt={{ clanek.data.picture_title }}>
+        </div>
+
+        <div class="blog-container__article-text">
+        
+            <h3 class="blog-container__heading">
+                <a href="{{ clanek.url }}">{{ clanek.data.title }}</a>
+            </h3>
+
+            <p>
+                {{ clanek.data.perex }}
+            </p>
+
+            <p class="blog-container__date">
+                {{ clanek.data.datum }}
+            </p>
+
+
+            <button class="blog-container__button">
+                <a href="{{ clanek.url }}">Celý článek</a>
+            </button>
+
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+
+<!--
+<div class="container-for-articles">
+
+    <div class="blog-container__article">
+
+        <div class="blog-container__article-img">
+            <img src="/img/blog/012_voda pro zemi.JPG" alt="potok ve stínu stomů">
+        </div>
+
+        <div class="blog-container__article-text">
+            <p class="blog-container__heading"> 
+                Voda pro Zemi!
+            </p>
+
+            <p class="blog-container__intro">
+                Dnes je den Země a my bychom jí rádi popřáli hlavně hodně vody.
+                A protože to na dostatek vody zatím nevypadá, (Máme za sebou suchou zimu bez sněhu. 
+                Začalo jaro a také sotva zapršelo. Podle předpovědí nás čeká velmi suché léto.) tak přinášíme pár tipů, jak zadržovat vodu na zahradě.
+            </p>
+
+            <button class="blog-container__button">
+                <a href="/article012">Celý článek</a>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="blog-container__article">
+
+        <div class="blog-container__article-img">
+            <img src="/img/blog/011_brambora přes celý svět.jpg" alt="brambora ve tvaru srdce nad mapou světa">
+        </div>
+
+        <div class="blog-container__article-text">
+            <p class="blog-container__heading"> 
+                Co nám může permakultura nabídnout v době globalizace a krizí?
+            </p>
+
+            <p class="blog-container__intro">
+                Permakultura není jen o trvale udržitelném zahradničení. Jde tam i o vztahy mezi lidmi. 
+                Její etické principy se dotýkají ekonomické a sociální sféry. 
+                Co nám tento přístup může nabídnout v globální době? Já myslím, že hodně.
+            </p>
+
+            <button class="blog-container__button">
+                <a href="/article011">Celý článek</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="blog-container__article">
+
+        <div class="blog-container__article-img">
+            <img src="/img/blog/010_rybníček_přední strana mauálu_přiblížení.png" alt="manuál na stavbu jezírka">
+        </div>
+
+        <div class="blog-container__article-text">
+            <p class="blog-container__heading"> 
+                Chystáme se na rybníček svépomocí
+            </p>
+
+            <p class="blog-container__intro">
+                Voda do zahrady patří, minimálně nějaké malé jezírko, by tam mělo být. Voda je život, bez ní by to nešlo. 
+                Každá zahrada, která je otevřena přírodě, by měla živočichům něco nabídnout. Pak se k vám na pozemek slétnou ptáci, žáby, vážky a další živočichové. 
+                Vy se pak můžete kochat z té krásy, kterou jste vytvořili.
+            </p>
+
+            <button class="blog-container__button">
+                <a href="/article010">Celý článek</a>
+            </button>
+        </div>
+    </div>
+
+
+</div>
+
+-->

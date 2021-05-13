@@ -1,0 +1,16 @@
+{% include "partials/page-top.njk" %}
+
+
+    <main class="main">
+        <h2 class="article-heading">{{ title }}</h2>
+        
+        <div class="article">
+            {{ content | safe }}
+        </div>
+            
+            
+        <a class="article_odkaz" href="/blog">Zpět na blog</a>
+
+    </main>
+
+{% include "partials/page.bottom.njk" %}

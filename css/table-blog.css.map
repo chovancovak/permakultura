@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAE,eAAe;CAMtC;;AAJG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EALvC,AAAA,WAAW,CAAC;IAMJ,qBAAqB,EAAE,OAAO;IAC9B,kBAAkB,EAAE,eAAe;GAE1C",
+    "sources": [
+        "../scss/table-blog.scss"
+    ],
+    "names": [],
+    "file": "table-blog.css"
+}

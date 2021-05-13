@@ -1,0 +1,84 @@
+
+
+.grid-sablona{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 $pad-mobile;
+
+    @media screen and (min-width: $tablet-size){   
+        padding: 0 $pad-tablet;
+    }
+  
+    @media screen and (min-width: $PC-size) {
+        flex-direction: row;
+        align-items: flex-start;
+
+        padding: 0 $pad-PC 0 $pad-PC - 80px ;
+    }
+
+    .content{
+        flex: 1 1 75%;
+
+        @media screen and (min-width: $PC-size){
+            margin-right: 80px;
+        }
+    }
+
+}
+
+
+h2{
+    color: $primary-c;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+
+    padding: 0 $pad-mobile;
+
+    
+    @media screen and (min-width: $tablet-size){   
+        padding: 0 $pad-tablet;
+        font-size: 40px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        padding: 0 $pad-PC;
+        font-size: 40px;
+    }
+    
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    text-align: justify;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: $background-c;
+    width: auto;
+    margin: 0;
+    // margin-left: auto;
+    // margin-right: auto;
+   
+
+    // @media screen and (min-width: $tablet-size) {
+       
+    //     width: 900px;
+    // }
+
+    // @media screen and (min-width: $PC-size) {
+       
+    //     width: 1300px;
+    // }
+
+}
+

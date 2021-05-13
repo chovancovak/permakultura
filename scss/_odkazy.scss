@@ -1,0 +1,45 @@
+.odkazy-h3{
+    color: $quaternary-c;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.list-odkazy{
+    list-style: none;
+    padding: 0;
+}
+
+
+.list-odkazy__link{
+    text-decoration: none;
+    color: $septenary-c;
+}
+
+.list-odkazy__link:hover{
+    font-size: 17px;
+    
+    @media screen and (min-width: $tablet-size) { 
+        font-size: 19px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        font-size: 23px;
+    }
+
+}
+
+.list-odkazy__item{
+    padding: 10px 0 10px 10px;
+    font-size: 15px;
+    margin: 0 $pad-mobile;
+
+    @media screen and (min-width: $tablet-size) { 
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        font-size: 20px;
+    }
+
+}
