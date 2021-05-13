@@ -13,6 +13,10 @@
     }    
 }
 
+.onas-container-uvod {
+    padding: 10px 0;
+}
+
 .onas-container-we{
     @media screen and (min-width: $tablet-size) { 
        display: grid;
@@ -52,9 +56,13 @@
     text-align: center;
     font-size: 25px;
     padding-top: 50px;
+    text-decoration: none;
+    color: $septenary-c;
 }
 
-
+.onas-container-we__adresa:hover{
+    color: $primary-c;
+}
 
 
 .onas__h3{
@@ -64,11 +72,33 @@
     padding-top: 30px;
 }
 
+
+
 .o_nas_galerie {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(20, 300px);
-    gap:10px;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(30);
+    gap: 5px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+   
+    @media screen and (min-width: $tablet-size) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(15, auto);
+        
+        
+    }
+
+    @media screen and (min-width: $PC-size) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(10, auto);
+        gap:10px;
+        
+    }
+
 
 }
 

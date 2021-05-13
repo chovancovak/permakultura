@@ -28,7 +28,15 @@
 .perma-container__left-author{
     text-align: end;
     font-style: italic;
-    margin: -23px 20px 27px 0;
+    margin: -10px 20px 27px 0;
+
+    @media screen and (min-width: $tablet-size) {
+        margin: -10px 20px 27px 0;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        margin: -5px 20px 27px 0;
+    }
 }
 
 .perma-container__left-title {
