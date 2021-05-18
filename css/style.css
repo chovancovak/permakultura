@@ -875,6 +875,15 @@ header {
   margin-top: 30px;
 }
 
+.article__h4 {
+  color: #A0B187;
+  font-family: 'Cormorant Garamond', serif;
+  color: #4A4146;
+  font-size: 21px;
+  margin-bottom: 2px;
+  margin-top: 30px;
+}
+
 .article__img {
   border-radius: 5px;
   margin-bottom: 10px;
@@ -892,6 +901,11 @@ header {
 
 .article_odkaz:hover {
   font-size: 24px;
+}
+
+.article__li {
+  font-size: 17px;
+  padding: 5px 0;
 }
 
 footer {
