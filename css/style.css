@@ -858,6 +858,36 @@ header {
   }
 }
 
+.articles__imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articles_galerie {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: ()[1];
+      grid-template-columns: repeat(1);
+  -ms-grid-rows: ()[30];
+      grid-template-rows: repeat(30);
+  gap: 5px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articles__img {
+  padding: 10px 5px;
+  min-width: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .article__big-img {
+    padding: 20px 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .article-heading {
     padding: 0 350px;

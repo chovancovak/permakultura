@@ -22,6 +22,51 @@
 
 // }
 
+//pro dva obrázky
+.articles__imgs{
+    display: flex;
+}
+
+//galerie
+.articles_galerie {
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(30);
+    gap: 5px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+   
+    // @media screen and (min-width: $tablet-size) {
+    //     grid-template-columns: repeat(2, auto);
+    //     grid-template-rows: repeat(15, auto);
+        
+        
+    // }
+
+    // @media screen and (min-width: $PC-size) {
+    //     grid-template-columns: repeat(2, auto);
+    //     grid-template-rows: repeat(10, auto);
+    //     gap:10px;
+        
+    // }
+}
+
+//obrázky galerie
+.articles__img{
+    padding: 10px 5px;
+    min-width: 0;
+}
+//obrázky jednotlivě
+.article__big-img{
+
+    @media screen and (min-width: $PC-size) {
+        padding: 20px 50px;
+    }
+}
+
 .article-heading {
     @media screen and (min-width: $PC-size) {
         padding: 0 350px;
@@ -48,6 +93,7 @@
     margin-top: 30px;
 }
 
+//obrázky, které jsou na bloku u seznamu článků!
 .article__img{
     border-radius: $radius_table;
     margin-bottom: 10px;
