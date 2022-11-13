@@ -24,10 +24,10 @@
        grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (min-width: $PC-size) { 
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-     }
+    // @media screen and (min-width: $PC-size) { 
+    //     grid-template-rows: 1fr;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //  }
 }
 
 .onas-container-we__h3{
@@ -42,7 +42,11 @@
     padding: 50px;
 }
 
-
+.onas-container-we__box{
+    @media screen and (min-width: $PC-size) { 
+        margin: 80px;
+    } 
+}
 
 .onas-container-we__box--bob{
     @media screen and (min-width: $tablet-size) { 
@@ -54,6 +58,7 @@
 
 .onas-container-we__adresa{
     text-align: center;
+    font-weight: bold;
     font-size: 25px;
     padding-top: 50px;
     text-decoration: none;
@@ -67,6 +72,7 @@
 
 .onas__h3{
     text-align: center;
+    color: red;
     color: $quaternary-c;
     font-size: 30px;
     padding-top: 30px;

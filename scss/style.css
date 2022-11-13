@@ -11,11 +11,6 @@
 /* žlutá - myšl. mapa a odkazy v blogu */
 /*mechově zelená – pro myšlenkovou mapu*/
 /*nadpis H3*/
-.popis-fotky {
-  padding: 20px 0 0 5px;
-  font-style: italic;
-}
-
 .grid-sablona {
   display: flex;
   flex-direction: column;
@@ -644,6 +639,12 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (min-width: 1200px) {
+  .onas-container-we {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .onas-container-we__h3 {
   text-align: center;
@@ -657,12 +658,6 @@ header {
   padding: 50px;
 }
 
-@media screen and (min-width: 1200px) {
-  .onas-container-we__box {
-    margin: 80px;
-  }
-}
-
 @media screen and (min-width: 650px) {
   .onas-container-we__box--bob {
     grid-columns: span 2;
@@ -671,7 +666,6 @@ header {
 
 .onas-container-we__adresa {
   text-align: center;
-  font-weight: bold;
   font-size: 25px;
   padding-top: 50px;
   text-decoration: none;
