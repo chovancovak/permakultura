@@ -1,4 +1,17 @@
+.popisek{
+    position: absolute;    
+    margin-top: -42px;
+    margin-left: 45px;
+   // transform: rotate(45deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    min-width: $min-width;
 
+    @media  screen and (min-width: $tablet-size) {
+        font-size: x-small;
+    }
+
+}
 
 .intro-grid{
     width: auto;
@@ -38,6 +51,20 @@
      }
 }
 
+.intro-grid__picture--first{
+    border-radius: 30%;
+}
+
+.intro-grid__offer{
+    margin-top: 20px;
+}
+
+.intro-grid__offer--a{
+    text-decoration: none;
+    color: $senary-c;
+    font-weight: bold;
+    font-size: larger;
+}
 
 .intro-grid__text--second{
     @media screen and (min-width: $tablet-size) {

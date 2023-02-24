@@ -90,6 +90,7 @@ header{
 
 .menu__link:hover{
     background-color: $primary-c;
+    border-radius: 4px 4px 0 0;
 }
 
 @media screen and (max-width: $tablet-size - 1px){

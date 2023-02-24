@@ -14,8 +14,12 @@ $septenary-c: #4A4146; /*nadpis H3*/
 $radius_table: 5px;
 
 //pro responzivní web - velikosti pro tablet a PC
-$tablet-size: 650px;
-$PC-size: 1200px;
+$tablet-size: 720px;
+$PC-size: 1250px;
+
+//minimální a maximální šířka stránky
+$min-width:320px;
+$max-width:1700px;
 
 //odsazení podle velikosti zobrazení stránky (PC, tablet, mobil)
 $pad-PC: 180px;

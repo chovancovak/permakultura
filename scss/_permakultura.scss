@@ -199,9 +199,14 @@
 
    // margin: 0 300px 0 100px;
 
-    @media screen and (max-width: $tablet-size - 1px) {
+    @media screen and (max-width: $tablet-size) {
         display: none;
     }
+    //Záhada* - media nad byla původně jako média, která jsoiu zakomentovaná pod s -1,
+    //ale hlásilo to chybu, tak jsem to vymazala a funguje to
+    // @media screen and (max-width: $tablet-size - 1px) {
+    //     display: none;
+    // }
     @media screen and (min-width: $tablet-size) {
         display: none;
     }
@@ -215,9 +220,13 @@
     @media screen and (min-width: $PC-size) {
         display: none;
     }
-    @media screen and (max-width: $tablet-size - 1px) {
+    @media screen and (max-width: $tablet-size) {
         display: none;
     }
+    //*záhada viz výše
+    // @media screen and (max-width: $tablet-size - 1px) {
+    //     display: none;
+    // }
 }
 
 

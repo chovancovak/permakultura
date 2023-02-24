@@ -1,0 +1,278 @@
+.koucovani__intro--title{
+    color: $quaternary-c;
+    font-size: 27px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.con-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media screen and (min-width: $tablet-size) { 
+        display: inline; 
+    }
+
+
+}
+
+.koucovani__intro--con{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (min-width: $tablet-size) { 
+       flex-direction: row; 
+        justify-content: space-around; 
+    }
+    
+    
+}
+
+.koucovani__intro{
+    padding: 10px;
+    margin: 10px 1px;
+  
+    border: 1px solid $tertiary-c;
+    border-radius: 50%;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   
+}
+
+.koucovani-conatainer__offer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $tablet-size) { 
+        flex-direction: row;
+        
+    }
+}
+
+.koucovani-con__offer--img{
+    border-radius: 50%;
+    width: 200px;
+
+    @media screen and (min-width: $tablet-size) { 
+        width: 250px;
+        
+    }
+
+    @media screen and (min-width: $PC-size) {
+        width: 350px;
+        
+    }
+    
+}
+
+.koucovani-con__offer--p{
+    color: $quaternary-c;
+    font-size: 27px;
+    font-style: italic;
+    text-align: center;
+    padding: 5px 50px;
+}
+
+.koucovani-con__offer--con-name{
+    margin-top: 20px;
+}
+
+.koucovani-con__offer--name{
+    text-align: center;
+}
+
+.koucovani-con__offer--name-a{
+    text-decoration: none;
+    color: black;
+}
+
+.koucovani-con__offer--name-a:hover{
+    color: $primary-c;
+}
+
+#koucovani__name{
+    font-weight: bold;
+}
+
+.koucovani-conatainer__offer--div{
+    margin-top: 30px;
+    
+    @media screen and (min-width: $tablet-size) { 
+        margin-top: 0;
+    }
+}
+
+.h2_koucovani{
+
+    padding: 50px 0 20px 0;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-size) { 
+        padding: 80px 0 30px 0;
+    }
+
+    @media screen and (min-width: $tablet-size) { 
+        padding: 80px 0 30px 0;
+    }
+}
+
+.koucovani-container__ref{
+   
+    @media screen and (min-width: $tablet-size) { 
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.koucovani__con--IndiRef{
+    margin-top: 35px;
+
+    @media screen and (min-width: $tablet-size){
+        margin-top: 0;
+    }
+
+}
+.koucovani-container__ref--conImg{
+    //padding: 0 50px;
+    width: 120px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.name_reference{
+    margin: 0;
+}
+
+.title_reference{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img_reference{
+    border-radius: 10%;
+}
+
+// .koucovani-container__ref--p-short{
+//     display: none;
+// }
+
+
+.koucovani-container__ref--p-long{
+    padding: 0 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+    @media screen and (min-width: $tablet-size) {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+}
+
+.koucovani__intro-form{
+    margin: 30px 0;
+    text-align: center;
+   font-weight: bold;
+   color: $senary-c;
+}
+
+.koucovani__form{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 500px;
+    
+    
+    background-color: $tertiary-c;
+    border-radius: 4%;
+    padding: 10px;
+}
+
+.koucovani__form--field{
+    display: flex;
+    margin: 10px;
+}
+
+.koucovani__form--field label{
+    //margin: 10px;
+    flex: 1 1 100px;
+}
+
+.koucovani__form--field input,
+.koucovani__form--field textarea{
+    width: 100%;
+    border: 1px solid $senary-c;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+.koucovani__form--checkbox{
+    	margin: 10px;
+
+}
+
+.koucovani__button{
+    //background-color: $quinary-c;
+    border: 1px solid $senary-c;
+    border-radius: 4px;
+    margin: 0 10px;
+    
+}
+
+
+.koucovani__button:hover{
+    background-color: $quinary-c;
+    
+}
+
+// GDPR
+
+.con_gdpr{
+    padding: 0 $pad-mobile;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $tablet-size) {
+        padding: 0 $pad-tablet;
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        padding: 0 $pad-PC;
+        margin-bottom: 250px;
+    }
+
+}
+
+.osobni_udaje-hlavicka-nadpis{
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.con_gdpr-hlavicka{
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-size) {
+        margin-bottom: 30px;
+    }
+}
+.osobni_udaje-hlavicka{
+    padding: 2px 0;
+}
+
+.osobni_udaje{
+    padding: 5px 0;
+
+    @media screen and (min-width: $tablet-size) {
+        padding: 10px 0;
+    }
+
+}

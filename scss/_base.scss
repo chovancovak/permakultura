@@ -21,7 +21,7 @@
         flex-direction: row;
         align-items: flex-start;
 
-        padding: 0 $pad-PC 0 $pad-PC - 80px ;
+        padding: 0 $pad-PC 0 $pad-PC;
     }
 
     .content{
@@ -40,16 +40,16 @@ h2{
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
 
-    padding: 0 $pad-mobile;
+    padding: 20px  $pad-mobile 0  $pad-mobile ;
 
     
     @media screen and (min-width: $tablet-size){   
-        padding: 0 $pad-tablet;
+        padding: 40px $pad-tablet 10px $pad-tablet;
         font-size: 40px;
     }
 
     @media screen and (min-width: $PC-size) {
-        padding: 0 $pad-PC;
+        padding: 60px $pad-PC 0 $pad-PC;
         font-size: 40px;
     }
     
@@ -70,7 +70,9 @@ body{
     font-family: 'Cormorant Garamond', serif;
     background-color: $background-c;
     width: auto;
-    margin: 0;
+    min-width: $min-width;
+    max-width: $max-width;
+    margin: 0 auto;
     // margin-left: auto;
     // margin-right: auto;
    
