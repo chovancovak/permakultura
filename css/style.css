@@ -1047,7 +1047,7 @@ footer {
 }
 
 .koucovani-con__offer--box {
-  border: 1px solid black;
+  border: 1px dotted #A0B187;
   padding: 7px 15px;
   margin: 7px 30px;
   font-size: 14px;
@@ -1244,4 +1244,8 @@ footer {
   .osobni_udaje {
     padding: 10px 0;
   }
+}
+
+.odeslano {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

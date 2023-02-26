@@ -87,7 +87,7 @@
 }
 
 .koucovani-con__offer--box{
-    border: 1px solid black;
+    border: 1px dotted $quaternary-c;
     padding: 7px 15px;
     margin: 7px 30px;
     font-size: 14px;
@@ -293,3 +293,14 @@
     }
 
 }
+
+//Odesláno
+
+// .odeslano-box{
+//     align-items: center;
+// }
+
+.odeslano{
+    text-align: center;
+}
+
