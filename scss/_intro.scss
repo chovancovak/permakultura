@@ -82,3 +82,13 @@
 
 }
 
+
+.intro-grid__text--sixth{
+
+    @media screen and (min-width: $tablet-size) {
+        grid-row: 6/span 1;
+        grid-column: 1/span 1;
+      }
+
+}
+

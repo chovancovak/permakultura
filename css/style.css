@@ -265,6 +265,13 @@ header {
   }
 }
 
+@media screen and (min-width: 720px) {
+  .intro-grid__text--sixth {
+    grid-row: 6/span 1;
+    grid-column: 1/span 1;
+  }
+}
+
 .odkazy-h3 {
   color: #A0B187;
   font-size: 32px;
@@ -1003,6 +1010,7 @@ footer {
 
 .koucovani-conatainer__offer {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1010,6 +1018,8 @@ footer {
 @media screen and (min-width: 720px) {
   .koucovani-conatainer__offer {
     flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1024,7 +1034,7 @@ footer {
 }
 @media screen and (min-width: 1250px) {
   .koucovani-con__offer--img {
-    width: 350px;
+    width: 310px;
   }
 }
 
@@ -1036,6 +1046,19 @@ footer {
   padding: 5px 50px;
 }
 
+.koucovani-con__offer--box {
+  border: 1px solid black;
+  padding: 7px 15px;
+  margin: 7px 30px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1250px) {
+  .koucovani-con__offer--box {
+    margin: 7px 40px;
+  }
+}
+
 .koucovani-con__offer--con-name {
   margin-top: 20px;
 }
@@ -1045,7 +1068,8 @@ footer {
 }
 
 .koucovani-con__offer--name-a {
-  text-decoration: none;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
   color: black;
 }
 
@@ -1106,11 +1130,13 @@ footer {
 
 .name_reference {
   margin: 0;
+  padding-left: 10px;
 }
 
 .title_reference {
   font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px 0 10px;
 }
 
 .img_reference {
