@@ -1202,6 +1202,28 @@ footer {
   background-color: #ECEFA2;
 }
 
+@media screen and (min-width: 720px) {
+  .con_masinka {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.ruzovaMasinka {
+  margin: 0 auto 30px auto;
+  width: 150px;
+}
+@media screen and (min-width: 720px) {
+  .ruzovaMasinka {
+    width: 200px;
+    margin: 0 50px 0 0;
+  }
+}
+
+.p_masinka {
+  padding-bottom: 10px;
+}
+
 .con_gdpr {
   padding: 0 20px;
   margin-bottom: 50px;
