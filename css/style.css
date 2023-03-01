@@ -728,6 +728,15 @@ header {
   padding-top: 30px;
 }
 
+.o_nas_psali_a {
+  font-weight: bold;
+  color: #C29EC4;
+}
+
+.onas_psali_p {
+  margin-bottom: 10px;
+}
+
 .o_nas_galerie {
   display: grid;
   grid-template-columns: repeat(1);
