@@ -14,9 +14,9 @@
     margin-left: 40px;
 
     @media screen and (min-width: $tablet-size) {
-        width: 700px;
-        flex-direction: row;
-        flex-wrap: wrap;
+        max-width: 600px;
+        // flex-direction: row;
+        // flex-wrap: wrap;
     }
 
     @media screen and (min-width: $PC-size) {
@@ -85,7 +85,8 @@
 
 .table-blog__img-box{
     @media screen and (min-width: $tablet-size) {
-        height: 200px;
+        height: auto;
+        //tohle jsem měla před tím na konkrétní výšku, ale nefungovalo mi to moc dobře u fotky clanku 019
     }
 
     @media screen and (min-width: $PC-size) {

@@ -1,5 +1,12 @@
 
+.p-koucovani{
+    margin-bottom: 15px;
+    line-height: 150%;
 
+    @media screen and (min-width: $PC-size) {
+        //padding-right: 200px;
+    }
+}
 
 .onas-container{
     padding: 0 $pad-mobile;

@@ -658,6 +658,10 @@ header {
   font-size: 16px;
 }
 
+.p-koucovani {
+  margin-bottom: 15px;
+  line-height: 150%;
+}
 .onas-container {
   padding: 0 20px;
 }
@@ -875,9 +879,7 @@ footer {
 }
 @media screen and (min-width: 720px) {
   .table-blog {
-    width: 700px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    max-width: 600px;
   }
 }
 @media screen and (min-width: 1250px) {
@@ -945,7 +947,7 @@ footer {
 
 @media screen and (min-width: 720px) {
   .table-blog__img-box {
-    height: 200px;
+    height: auto;
   }
 }
 @media screen and (min-width: 1250px) {
@@ -979,6 +981,16 @@ footer {
   font-size: 27px;
   font-style: italic;
   margin: 20px 0;
+}
+@media screen and (min-width: 720px) {
+  .koucovani__intro--title {
+    margin: 50px 0;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .koucovani__intro--title {
+    margin: 70px 0;
+  }
 }
 
 .con-intro {
