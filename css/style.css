@@ -47,17 +47,19 @@ h2 {
   color: #C29EC4;
   font-family: "Cormorant Garamond", serif;
   font-size: 30px;
-  padding: 20px 20px 0 20px;
+  padding: 0 20px 0 20px;
+  margin: 5px 0 10px 0;
 }
 @media screen and (min-width: 720px) {
   h2 {
-    padding: 40px 120px 10px 120px;
+    padding: 0 120px 10px 120px;
     font-size: 40px;
+    margin: 10px 0 20px 0;
   }
 }
 @media screen and (min-width: 1250px) {
   h2 {
-    padding: 60px 180px 0 180px;
+    padding: 0 180px 0 180px;
     font-size: 40px;
   }
 }
@@ -181,11 +183,44 @@ header {
   border-radius: 4px 4px 0 0;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 720px) {
   .menu__checkbox:checked ~ .menu__list {
     display: block;
   }
 }
+.ul-loga {
+  list-style: none;
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 720px) {
+  .ul-loga {
+    padding: 0 120px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .ul-loga {
+    padding: 0 180px;
+  }
+}
+
+.li-logo {
+  width: 30px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 720px) {
+  .li-logo {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .li-logo {
+    width: 50px;
+  }
+}
+
 .popisek {
   position: absolute;
   margin-top: -42px;

@@ -40,16 +40,18 @@ h2{
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
 
-    padding: 20px  $pad-mobile 0  $pad-mobile ;
+    padding: 0  $pad-mobile 0  $pad-mobile;
+    margin: 5px 0 10px 0;
 
     
     @media screen and (min-width: $tablet-size){   
-        padding: 40px $pad-tablet 10px $pad-tablet;
+        padding: 0 $pad-tablet 10px $pad-tablet;
         font-size: 40px;
+        margin: 10px 0 20px 0;
     }
 
     @media screen and (min-width: $PC-size) {
-        padding: 60px $pad-PC 0 $pad-PC;
+        padding: 0 $pad-PC 0 $pad-PC;
         font-size: 40px;
     }
     

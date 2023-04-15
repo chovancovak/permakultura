@@ -93,13 +93,43 @@ header{
     border-radius: 4px 4px 0 0;
 }
 
-@media screen and (max-width: $tablet-size - 1px){
+@media screen and (max-width: $tablet-size){
     .menu__checkbox:checked ~ .menu__list {
         display: block;
     }
 }
 
+//loga
+.ul-loga{
+    list-style: none;
+    padding: 0 $pad-mobile;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
 
+    @media screen and (min-width: $tablet-size){   
+        padding: 0 $pad-tablet;
+    }
+    @media screen and (min-width: $PC-size) {
+        padding: 0 $pad-PC;
+    }
+
+}
+
+.li-logo{
+    width: 30px;
+    margin-right: $pad-mobile;
+
+    @media screen and (min-width: $tablet-size){   
+        width: 40px;
+       
+    }
+    
+    @media screen and (min-width: $PC-size) {
+            width: 50px;
+            
+    }
+}
 
 
 
