@@ -1,0 +1,54 @@
+{% include "partials/page-top.njk" %}
+
+
+    <main class="main">
+        
+        
+        <div class="div-intro">
+    
+            <div class="content">
+                {{ content | safe }}
+            </div>
+
+            <aside class="table-blog">
+
+                <div class="table-blog__h3-box">
+                    <h3 class= "table-blog__h3">Z blogu</h3>
+                </div>
+                
+                <div class="table-blog__article table-blog__article1">
+                   
+                    
+                    {% for clanek in collections.clanky | reverse %}
+                        
+                            {% if loop.index <=3 %} <!-- začátek podmínky, na kolik článků se má vypsat z kolekce-->
+                           
+                           <div class="div_one_article">
+                                <h4 class="table-blog__h4">
+                                    <a class="table-blog__h4" href="{{ clanek.url }}">{{ clanek.data.title }}</a>
+                                </h4>
+
+                                <div class="table-blog__img-box">
+                                    <img class="table-blog__img" src={{ clanek.data.picture }} alt={{ clanek.data.picture_title }}>
+                                </div>
+                            </div>
+
+                            {% endif %} <!-- konec podmínky, na kolik článků se má vypsat z kolekce-->
+                        
+
+
+                    {% endfor %}
+                    
+                </div>
+                
+                
+
+            </aside>
+
+          
+        
+        </div>
+
+    </main>
+
+    {% include "partials/page.bottom.njk" %}

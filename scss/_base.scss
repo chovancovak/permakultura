@@ -18,14 +18,14 @@
     }
   
     @media screen and (min-width: $PC-size) {
-        flex-direction: row;
+        //flex-direction: row;
         align-items: flex-start;
 
         padding: 0 $pad-PC 0 $pad-PC;
     }
 
     .content{
-        flex: 1 1 75%;
+        flex: 1 1 50%;
 
         @media screen and (min-width: $PC-size){
             margin-right: 80px;
@@ -41,13 +41,13 @@ h2{
     font-size: 30px;
 
     padding: 0  $pad-mobile 0  $pad-mobile;
-    margin: 5px 0 10px 0;
+    margin: 20px 0 30px 0;
 
     
     @media screen and (min-width: $tablet-size){   
         padding: 0 $pad-tablet 10px $pad-tablet;
         font-size: 40px;
-        margin: 10px 0 20px 0;
+        margin: 30px 0 20px 0;
     }
 
     @media screen and (min-width: $PC-size) {

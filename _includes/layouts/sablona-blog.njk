@@ -23,12 +23,15 @@
                     {% for clanek in collections.clanky | reverse %}
                         
                             {% if loop.index <=3 %} <!-- začátek podmínky, na kolik článků se má vypsat z kolekce-->
-                            <h4 class="table-blog__h4">
-                                <a class="table-blog__h4" href="{{ clanek.url }}">{{ clanek.data.title }}</a>
-                            </h4>
+                           
+                           <div class="div_one_article">
+                                <h4 class="table-blog__h4">
+                                    <a class="table-blog__h4" href="{{ clanek.url }}">{{ clanek.data.title }}</a>
+                                </h4>
 
-                            <div class="table-blog__img-box">
-                                <img class="table-blog__img" src={{ clanek.data.picture }} alt={{ clanek.data.picture_title }}>
+                                <div class="table-blog__img-box">
+                                    <img class="table-blog__img" src={{ clanek.data.picture }} alt={{ clanek.data.picture_title }}>
+                                </div>
                             </div>
 
                             {% endif %} <!-- konec podmínky, na kolik článků se má vypsat z kolekce-->

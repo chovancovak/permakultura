@@ -3,60 +3,75 @@
 
 .table-blog{
     border: solid 1px $background-c;
-    background-color: $quaternary-c;
+    background-color: $background-c;
     border-radius: $radius-table;
     display: flex;
     flex-direction: column;
     width: auto;
     margin-bottom: 30px;
     margin-top: 50px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: $tablet-size) {
         max-width: 600px;
-        // flex-direction: row;
-        // flex-wrap: wrap;
+     
     }
 
     @media screen and (min-width: $PC-size) {
+        max-width: none;
         display: flex;
-        flex-direction: column;
-        width: 200px;
         margin-left: 30px;
         margin-top: 80px;
     }
 
 }
 
+.div_one_article{
+    
+    @media screen and (min-width: $PC-size) {
+        flex: 1 1 0;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
 .table-blog__article{
     @media screen and (min-width: $tablet-size) {
-        flex: 1 1 50%;
+        flex: 1 1 60%;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        flex: 1 1 60%;
+        display: flex;
+        //flex-direction: row;
     }
 }
 
 
 
 .table-blog__h3-box{
-    background-color: $tertiary-c;
+    background-color: $background-c;
     border-radius: $radius-table $radius-table 0px 0px;
     flex: 1 1 100%;
 }
 
 .table-blog__h3{
     color: $septenary-c;
-    font-size: 23px;
+    font-size: 40px;
     text-align: center;
 }
 
 .table-blog__h4{
-    color: $background-c;
+    font-size: 24px;
+    color: $septenary-c;
     text-align: center;
     padding: 0 8px;
     text-decoration: none;
 
 
     @media screen and (min-width: $tablet-size) {
+        font-size: 26px;
         height: 50px;
         padding: 0px 20px;
         margin: 20px 0px 7px 0px;
