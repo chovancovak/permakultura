@@ -40,14 +40,14 @@
 
 .div_my_story{
 
-    padding: 15px $pad-mobile;
+    padding: 0 $pad-mobile 15px $pad-mobile;
 
     @media screen and (min-width: $tablet-size){   
-        padding: 20px $pad-tablet;
+        padding: 0 $pad-tablet 20px $pad-tablet;
     }
   
     @media screen and (min-width: $PC-size) {
-        padding: 30px $pad-PC;
+        padding: 0 $pad-PC 30px $pad-PC;
     }
 
 }
@@ -58,19 +58,47 @@
 
 .intro-offer--a{
         text-decoration: none;
-        color: $senary-c;
+        color: $quinary-c;
         font-weight: bold;
         font-size: larger;
 }
 
-#text_stred{
+#div_dark{
+    background-color: $senary-c;
+}
+
+#text_sledujte_nas{
     text-align: center;
+    color: $background-c;
 }
 
 .h3_intro{
     color: $septenary-c;
     font-size: 40px;
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#text_bright{
+    color: $background-c;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#h3_intro_svetly{
+    color: $background-c;
+    padding-top: 20px;
+
+    @media screen and (min-width: $tablet-size) {
+        padding-top: 30px;
+    }
+
+    @media screen and (min-width: $tablet-size) {
+        padding-top: 40px;
+    }
 }
 
 
