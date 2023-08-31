@@ -80,6 +80,7 @@
 }
 
 .article__h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: $quaternary-c;
     font-size: 25px;
     margin-bottom: 15px;
@@ -93,6 +94,14 @@
     font-size: 21px;
     margin-bottom: 2px;
     margin-top: 30px;
+}
+
+.article_h3_svetly{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $quinary-c;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 //obrázky, které jsou na bloku u seznamu článků!
@@ -159,5 +168,11 @@
 
 #popis-fotky_dole{
     padding-top: 0;
-    margin-top: -10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+   @media screen and (min-width: $PC-size) {
+        margin-top: -15px;  
+    }
+
 }
