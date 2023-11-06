@@ -1,40 +1,59 @@
-
-h1 {
-    color: $background-c;
-    font-size: 40px;
-    size: 50px;
-    padding-left: $pad-mobile;
-    margin: 0 0 10px 0;
-    display: inline-block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    @media screen and (min-width: $tablet-size){   
-        padding: 0 0 0 $pad-tablet;
-        margin-bottom: 10px;
-        font-size: 50px;
-    }
-
-    @media screen and (min-width: $PC-size){
-        padding: 0 0 0 $pad-PC;
-        width: auto;
-        margin: 0;
-    }
-}
-
-
 header{
-    background-image: url(/img/úvod/pozadí.jpg);
+    //background-image: url(/img/úvod/pozadí.jpg);
+    background-color: $secondary-c;
     width: 100%;
     background-size: 100%;
     margin: 0;
     padding: 20px 0 5px 0;
     
-    @media screen and (min-width: $PC-size) {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 0;    
+    // @media screen and (min-width: $PC-size) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding: 20px 0;    
+    // }
+}
+
+
+.header-logo{
+    max-width: 60px;
+    margin-right: 10px;
+
+
+    // @media screen and (min-width: $tablet-size){ 
+    //     width: 80px;  
+    //     padding: 0 0 0 $pad-tablet;
+    // }
+
+    // @media screen and (min-width: $PC-size){
+    //     padding: 0 0 0 $pad-PC;
+    // }
+}
+
+
+h1 {
+    color: $background-c;
+    font-size: 40px;
+    padding-left: $pad-mobile;
+    size: 50px;
+    margin: 0 0 3px 0;
+    display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    @media screen and (min-width: $tablet-size){   
+        margin-bottom: 10px;
+        font-size: 50px;
+        padding: 0 0 0 $pad-tablet;
+    }
+
+    @media screen and (min-width: $PC-size){
+        width: auto;
+        margin: 0;
+        padding: 0 0 0 $pad-PC;
     }
 }
+
+
+
 
 .menu__checkbox{
     position: absolute;
@@ -74,7 +93,7 @@ header{
 
         display: inline-block;
         background-color: transparent;
-        padding: 0 $pad-PC 0 0;
+        padding: 0 $pad-PC 0 $pad-PC;
     }
 }
 
@@ -85,8 +104,7 @@ header{
 
     @media screen and (min-width: $PC-size) {
         border: transparent; 
-        display: inline-block;  
-        margin-top: 18px;     
+        display: inline-block;       
     }
    
 }

@@ -58,7 +58,7 @@
 
 .intro-offer--a{
         text-decoration: none;
-        color: $quinary-c;
+        color: $primary-c;
         font-weight: bold;
         font-size: larger;
 }
@@ -167,8 +167,17 @@
 
     @media screen and (min-width:$tablet-size) {
         margin: 10px 0;
+        font-size: 24px;
+    }
+
+    @media screen and (min-width:$PC-size) {
+        font-size: 26px;
     }
     
+}
+
+.intro_ekoprvky--img{
+    border-radius: 1%;
 }
 
 //SCSS k původnímu gridu v intru

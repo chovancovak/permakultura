@@ -4,7 +4,7 @@
     font-size: 27px;
     font-style: italic;
     margin: 20px 20px;
-
+    
     @media screen and (min-width: $tablet-size) {
         margin: 50px 50px;
     }
@@ -13,7 +13,14 @@
         margin: 70px 200px;
 
     }
+}
 
+.a-koucovani{
+    color: $secondary-c;
+}
+
+.p-koucovani{
+    line-height: normal;
 }
 
 .con-intro{
@@ -194,6 +201,30 @@
 // .koucovani-container__ref--p-short{
 //     display: none;
 // }
+
+.img-skupinove-koucovani{
+
+    @media screen and (min-width: $tablet-size) {
+        max-width: 450px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    @media screen and (min-width: $PC-size) {
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+.koucovani_skupinove_popisek{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
 
 
 .koucovani-container__ref--p-long{

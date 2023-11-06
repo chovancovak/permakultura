@@ -4,7 +4,7 @@
 }
 
 /*pozadí a H1*/
-/* nadpisy H2 */
+/* nadpisy H2 , dříve C29EC4*/
 /*hodně tmavě zelené – barva patičky, nadpisy v boxech „Řekli o permakultuře“ */
 /* sětle zelená – horní část okna boxů pro blog */
 /* tmavě zelená – spodní část boxu pro blog a odkazy na více z článku v blogu */
@@ -38,7 +38,7 @@
 }
 
 h2 {
-  color: #C29EC4;
+  color: #eab148;
   font-family: "Cormorant Garamond", serif;
   font-size: 30px;
   padding: 0 20px 0 20px;
@@ -85,42 +85,40 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  color: #FAF2F2;
-  font-size: 40px;
-  size: 50px;
-  padding-left: 20px;
-  margin: 0 0 10px 0;
-  display: inline-block;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-@media screen and (min-width: 720px) {
-  h1 {
-    padding: 0 0 0 120px;
-    margin-bottom: 10px;
-    font-size: 50px;
-  }
-}
-@media screen and (min-width: 1250px) {
-  h1 {
-    padding: 0 0 0 180px;
-    width: auto;
-    margin: 0;
-  }
-}
-
 header {
-  background-image: url(/img/úvod/pozadí.jpg);
+  background-color: #4D5A46;
   width: 100%;
   background-size: 100%;
   margin: 0;
   padding: 20px 0 5px 0;
 }
+
+.header-logo {
+  max-width: 60px;
+  margin-right: 10px;
+}
+
+h1 {
+  color: #FAF2F2;
+  font-size: 40px;
+  padding-left: 20px;
+  size: 50px;
+  margin: 0 0 3px 0;
+  display: inline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (min-width: 720px) {
+  h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    padding: 0 0 0 120px;
+  }
+}
 @media screen and (min-width: 1250px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+  h1 {
+    width: auto;
+    margin: 0;
+    padding: 0 0 0 180px;
   }
 }
 
@@ -158,7 +156,7 @@ header {
   .menu__list {
     display: inline-block;
     background-color: transparent;
-    padding: 0 180px 0 0;
+    padding: 0 180px 0 180px;
   }
 }
 
@@ -171,7 +169,6 @@ header {
   .menu__item {
     border: transparent;
     display: inline-block;
-    margin-top: 18px;
   }
 }
 
@@ -183,7 +180,7 @@ header {
 }
 
 .menu__link:hover {
-  background-color: #C29EC4;
+  background-color: #eab148;
   border-radius: 4px;
 }
 
@@ -267,7 +264,7 @@ header {
 
 .intro-offer--a {
   text-decoration: none;
-  color: #ECEFA2;
+  color: #eab148;
   font-weight: bold;
   font-size: larger;
 }
@@ -372,7 +369,17 @@ header {
 @media screen and (min-width: 720px) {
   .intro_ekoprvky_nadpis {
     margin: 10px 0;
+    font-size: 24px;
   }
+}
+@media screen and (min-width: 1250px) {
+  .intro_ekoprvky_nadpis {
+    font-size: 26px;
+  }
+}
+
+.intro_ekoprvky--img {
+  border-radius: 1%;
 }
 
 .odkazy-h3 {
@@ -602,7 +609,7 @@ header {
 }
 
 .perma-container__link:hover {
-  color: #C29EC4;
+  color: #eab148;
   font-size: 24px;
 }
 
@@ -825,7 +832,7 @@ header {
 }
 
 .onas-container-we__adresa:hover {
-  color: #C29EC4;
+  color: #eab148;
 }
 
 .onas__h3 {
@@ -837,7 +844,7 @@ header {
 
 .o_nas_psali_a {
   font-weight: bold;
-  color: #C29EC4;
+  color: #eab148;
 }
 
 .onas_psali_p {
@@ -1025,7 +1032,7 @@ header {
   text-align: center;
   padding: 10px;
   text-decoration: none;
-  color: #C29EC4;
+  color: #eab148;
   font-size: 22px;
   padding-top: 20px;
 }
@@ -1235,6 +1242,14 @@ footer {
   }
 }
 
+.a-koucovani {
+  color: #4D5A46;
+}
+
+.p-koucovani {
+  line-height: normal;
+}
+
 .con-intro {
   display: flex;
   align-items: center;
@@ -1337,7 +1352,7 @@ footer {
 }
 
 .koucovani-con__offer--name-a:hover {
-  color: #C29EC4;
+  color: #eab148;
 }
 
 #koucovani__name {
@@ -1404,6 +1419,29 @@ footer {
 
 .img_reference {
   border-radius: 10%;
+}
+
+@media screen and (min-width: 720px) {
+  .img-skupinove-koucovani {
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .img-skupinove-koucovani {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.koucovani_skupinove_popisek {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px 0 10px 0;
 }
 
 .koucovani-container__ref--p-long {
