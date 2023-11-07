@@ -122,6 +122,25 @@ h1 {
   }
 }
 
+.heading-p {
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Cormorant Garamond", serif;
+  color: #eab148;
+  padding: 0 0 0 20px;
+}
+@media screen and (min-width: 720px) {
+  .heading-p {
+    display: inline;
+    padding: 0 0 0 23px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .heading-p {
+    padding: 0 0 0 50px;
+  }
+}
+
 .menu__checkbox {
   position: absolute;
   left: -9999px;
