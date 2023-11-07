@@ -69,6 +69,13 @@
     }
 }
 
+
+.article__small-img{
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
 .article-heading {
     @media screen and (min-width: $PC-size) {
         padding: 0 350px;

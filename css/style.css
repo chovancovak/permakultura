@@ -1006,6 +1006,12 @@ h1 {
   }
 }
 
+.article__small-img {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1250px) {
   .article-heading {
     padding: 0 350px;
