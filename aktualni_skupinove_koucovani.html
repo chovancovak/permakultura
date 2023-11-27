@@ -1,0 +1,86 @@
+---
+layout: layouts/sablona.njk
+title: Aktuální nabídka skupinového koučování
+---
+
+<div class="div_aktual_skupi_kouc">
+    
+    <h3 class="skupi_kouc-h3">"Šťastné a pomalé"</h3>
+
+    <div class="skupi_kouc-div-intro">
+
+        <div class="skupi_kouc-div-otazky">
+            <p class="skupi_kouc-otazky">Nehonit se a prostě si prožít vánoční okamžiky? </p>
+            <p class="skupi_kouc-otazky">...</p>
+            <p class="skupi_kouc-otazky">Daří se Vám to tak, jak byste chtěli?</p>
+            <p class="skupi_kouc-otazky">...</p>
+            <p class="skupi_kouc-otazky"> Nebo se to nakonec nějak zvrtne?</p>
+            <p class="skupi_kouc-otazky">...</p>
+            <p class="skupi_kouc-otazky">Jak se zpomalit a vydechnout?</p>
+        </div>
+        
+        <div class="skupi_kouc-div-format">
+            <p class="skupi_kouc-format">Pojďte si to prozkoumat formou skupinového koučování.</p>
+        </div>
+
+    </div>
+
+
+    <p class="skupi_kouc-p-cotoje"><strong>Skupinové koučování</strong> nabízí možnost sejít se se skupinou lidí, které zajímá stejné téma. Každý si však zvolí sám svůj individuální cíl, na kterém pracuje během setkání. Já Vám budu tvořit prostor pro zkoumání tématu. Na konci byste měli odcházet alespoň s jedním malým krokem, který aplikujete ve Vašem životě. Sdílí jen ten, kdo chce sdílet. Můžete se rozvíjet i mlčky.</p>
+
+
+    <p class="skupi_kouc-p-cotoje">Pracuji podle standardů ICF a dodržuij etický kodex. Více o mě a mém koučování je <a href="https://www.permaraj.cz/koucovani/">zde.</a></p>
+
+    <p class="skupi_kouc_tema_heading">V tématu “Šťastné a pomalé” budeme zkoumat tyto otázky:</p>
+    <p>Co to znamená “Šťastné a pomalé?”</p>
+    <p>Co je pro Vás na období Vánoc nejdůležitější?</p>
+    <p>Jak dosáhnout zpomalení?</p>
+    <p>Co Vám to přinese?</p>
+    <p>Co pro to chcete udělat?</p>
+
+    <div class="skupi_kouc_kde_kde">
+        <p>Kde: <strong>online Zoom</strong></p>
+        <p>Kdy: <strong>čtvrtek 7.12. od 19:00 do 20:15</strong></p>
+        <p>Maximálně 8 účastníků</p>
+        <p>Připravte si tužku, papír a najděte si klidné místo</p>
+        <p>Cena je 250 Kč</p>
+    </div>
+
+    <p class="koucovani__intro-form">Přihlásit se:</p>
+
+<!-- Formulář -->
+<form name="contact" method="POST" data-netlify="true" action="/odeslano">
+    <div class="koucovani__form">
+        <div class="koucovani__form--field">
+            <label for="name">Jméno:<span>*</span></label>
+            <input type=”text” name=”name” id="name" placeholder="Josef Zahrádka"  required> 
+        </div>
+        
+        <div class="koucovani__form--field">
+            <label>Tel. číslo:</label>
+            <input type=”number” name=”number” placeholder="+420 xxx xxx xxx" >
+        </div>
+
+        <div class="koucovani__form--field">
+            <label>E-mail:<span>*</span></label>
+            <input type=”text” name=”text” required placeholder="zahradka@posta.cz" >
+        </div>
+
+        <!-- <div class="koucovani__form--field">
+            <label>Poznámka:</label>
+            <textarea type=”textarea” name=”textarea” rows="3" ></textarea>
+        </div> -->
+
+        <div class="koucovani__form--checkbox">
+            <label for="souhlas">Souhlasím se zpracováním <a href="/osobni_udaje">osobních údajů</a></label>
+            <input type="checkbox" name="souhlas" id="souhlas" value="ano" required>
+        </div>
+
+        <button class="koucovani__button" type=”submit”>odeslat</button>
+    </div>
+</form>
+
+
+
+
+</div>

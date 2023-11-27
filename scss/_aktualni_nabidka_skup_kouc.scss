@@ -1,0 +1,84 @@
+.div_aktual_skupi_kouc{
+
+    padding: 0 $pad-mobile 15px $pad-mobile;
+
+    @media screen and (min-width: $tablet-size){   
+        padding: 0 $pad-tablet 20px $pad-tablet;
+    }
+  
+    @media screen and (min-width: $PC-size) {
+        padding: 0 $pad-PC 30px $pad-PC;
+    }
+
+}
+
+
+.skupi_kouc-h3{
+    color: $quaternary-c;
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.skupi_kouc-div-intro{
+
+
+    @media screen and (min-width: $tablet-size){
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+
+}
+
+.skupi_kouc-div-otazky{
+    margin: 20px 0;
+    background-color: $quaternary-c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skupi_kouc-otazky{
+    text-align: center;
+    
+    color: $background-c;
+    margin: 0;
+    font-weight: bold;
+}
+
+// .skupi_kouc-div-format{
+//     background-color: $primary-c;
+//     border-radius: 100%;
+//     width: 150px;
+//     height: 150px;
+// }
+
+.skupi_kouc-format{
+    padding: 10px;
+    margin: 10px 1px;
+    border: 1px solid $tertiary-c;
+    border-radius: 50%;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.skupi_kouc-p-cotoje{
+    margin: 20px 0;
+}
+
+.skupi_kouc_tema_heading{
+    //font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $quaternary-c;
+    margin: 25px 0 10px 0;
+}
+
+.skupi_kouc_kde_kde{
+    margin: 25px 0 10px 0;
+}

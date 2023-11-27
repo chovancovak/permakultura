@@ -277,6 +277,26 @@ h1 {
   }
 }
 
+.intro_koucuju {
+  background-color: #eab148;
+  width: 270px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.intro_koucuju-p {
+  text-align: center;
+  margin: 3px 0;
+}
+
+#intro_koucuju-p-koucuju {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
 .intro_a {
   color: black;
 }
@@ -322,7 +342,7 @@ h1 {
     padding-top: 30px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1250px) {
   #h3_intro_svetly {
     padding-top: 40px;
   }
@@ -1446,6 +1466,16 @@ footer {
   border-radius: 10%;
 }
 
+.kocouvani-offer-skupi-kouc-div {
+  background-color: #eab148;
+  width: 220px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: -30px;
+}
+
 @media screen and (min-width: 720px) {
   .img-skupinove-koucovani {
     max-width: 450px;
@@ -1596,4 +1626,76 @@ footer {
 
 .odeslano {
   text-align: center;
+}
+
+.div_aktual_skupi_kouc {
+  padding: 0 20px 15px 20px;
+}
+@media screen and (min-width: 720px) {
+  .div_aktual_skupi_kouc {
+    padding: 0 120px 20px 120px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .div_aktual_skupi_kouc {
+    padding: 0 180px 30px 180px;
+  }
+}
+
+.skupi_kouc-h3 {
+  color: #A0B187;
+  font-size: 32px;
+  font-style: italic;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+  .skupi_kouc-div-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.skupi_kouc-div-otazky {
+  margin: 20px 0;
+  background-color: #A0B187;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skupi_kouc-otazky {
+  text-align: center;
+  color: #FAF2F2;
+  margin: 0;
+  font-weight: bold;
+}
+
+.skupi_kouc-format {
+  padding: 10px;
+  margin: 10px 1px;
+  border: 1px solid #CEDAAC;
+  border-radius: 50%;
+  display: block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.skupi_kouc-p-cotoje {
+  margin: 20px 0;
+}
+
+.skupi_kouc_tema_heading {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A0B187;
+  margin: 25px 0 10px 0;
+}
+
+.skupi_kouc_kde_kde {
+  margin: 25px 0 10px 0;
 }/*# sourceMappingURL=style.css.map */

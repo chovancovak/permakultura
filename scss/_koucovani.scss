@@ -202,6 +202,16 @@
 //     display: none;
 // }
 
+.kocouvani-offer-skupi-kouc-div{
+    background-color: $primary-c;
+    width: 220px;
+    margin: auto;
+    padding: 10px;
+    border-radius: $radius_table;
+    margin-bottom: 15px;
+    margin-top: -30px;
+}
+
 .img-skupinove-koucovani{
 
     @media screen and (min-width: $tablet-size) {
