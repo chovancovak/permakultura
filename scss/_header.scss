@@ -163,6 +163,12 @@ h1 {
 
 #li-logo{
     width: 30px;
+    margin: 10px auto;
+
+    @media screen and (min-width: $PC-size) {
+        margin-right: 10px;
+    }
+    
 
 }
 
