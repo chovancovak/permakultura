@@ -125,7 +125,6 @@ h1 {
 
 .heading-p {
   font-weight: normal;
-  font-style: italic;
   font-family: "Cormorant Garamond", serif;
   color: #eab148;
   padding: 0 0 0 20px;
@@ -286,7 +285,6 @@ h1 {
 
 .intro_koucuju {
   background-color: #eab148;
-  width: 270px;
   margin: auto;
   padding: 10px;
   border-radius: 5px;
@@ -295,6 +293,12 @@ h1 {
 .intro_koucuju-p {
   text-align: center;
   margin: 3px 0;
+}
+
+#intro_koucuju-p_bright {
+  color: #FAF2F2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #intro_koucuju-p-koucuju {
