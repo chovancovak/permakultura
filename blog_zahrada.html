@@ -1,0 +1,50 @@
+---
+layout: layouts/sablona.njk
+---
+
+<div class="container-for-articles">
+
+    <h2 class="blog-container-title">Blog</h2>
+
+    <div class="blog_tlacitka">
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog">Celý blog</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_dum">O domě</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_osobnirozvoj">O člověku</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_komunita">O komunitě</a></p>
+    </div>
+
+    
+    <p class="blog_into">Hlavně zhrada je důvod, proč si stavíme dům. Trávíme v ní hodně času. Něco už jsme zde vybudovali, jak se můžete dočíst. A jak bude vypadat sezona 2024?</p>
+    
+    {% for zahrada in collections.zahrada | reverse %}
+
+    <div class="blog-container__article">
+        
+        <div class="blog-container__article-img">
+            <img class="table-blog__img" src={{ zahrada.data.picture }} alt={{ zahrada.data.picture_title }}>
+        </div>
+
+        <div class="blog-container__article-text">
+        
+            <h3 class="blog-container__heading">
+                <a href="{{ zahrada.url }}">{{ zahrada.data.title }}</a>
+            </h3>
+
+            <p>
+                {{ zahrada.data.perex }}
+            </p>
+
+            <p class="blog-container__date">
+                {{ zahrada.data.datum }}
+            </p>
+
+
+            <button class="blog-container__button">
+                <a href="{{ zahrada.url }}">Celý článek</a>
+            </button>
+
+        </div>
+    </div>
+
+    {% endfor %}
+</div>

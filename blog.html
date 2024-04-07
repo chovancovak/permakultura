@@ -2,9 +2,18 @@
 layout: layouts/sablona.njk
 ---
 
+
 <div class="container-for-articles">
 
     <h2 class="blog-container-title">Blog</h2>
+    <div class="blog_tlacitka">
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_dum">O domě</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_zahrada">O zahradě</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_osobnirozvoj">O člověku</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_komunita">O komunitě</a></p>
+    </div>
+
+    <p class="blog_into">Vítejte na blogu! Najdete tu články o tom, jak stavíme dům, jak se učíme zahradničit, poznáváme sami sebe a v neposlední řadě naše sousedy! :-)</p>
     
     {% for clanek in collections.clanky | reverse %}
 

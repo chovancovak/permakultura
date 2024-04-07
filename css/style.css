@@ -284,10 +284,9 @@ h1 {
 }
 
 .intro_koucuju {
-  background-color: #eab148;
+  background-color: #4D5A46;
   margin: auto;
   padding: 10px;
-  border-radius: 5px;
 }
 
 .intro_koucuju-p {
@@ -304,12 +303,13 @@ h1 {
 #intro_koucuju-p-koucuju {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 40px;
   margin-bottom: 10px;
+  color: #eab148;
 }
 
 .intro_a {
-  color: black;
+  color: #FAF2F2;
 }
 
 .intro-offer--a {
@@ -710,6 +710,45 @@ h1 {
   }
 }
 
+.blog_tlacitka {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 720px) {
+  .blog_tlacitka {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .blog_tlacitka {
+    padding: 0;
+  }
+}
+
+.blog_into {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.blog__tlacitka--boxy {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  max-width: 100px;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: #A0B187;
+  padding: 2px 4px;
+  text-align: center;
+}
+
+.blog__tlacitka--a {
+  text-decoration: none;
+  padding: 5px;
+  color: #FAF2F2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
 .container-for-articles {
   padding: 0 20px;
 }
@@ -783,7 +822,8 @@ h1 {
 
 .blog-container__heading a {
   text-decoration: none;
-  color: #A0B187;
+  color: #4D5A46;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-container__button {
@@ -806,6 +846,8 @@ h1 {
 
 .blog-container__date {
   margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 
 .blog-container__button a {

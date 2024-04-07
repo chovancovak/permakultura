@@ -1,3 +1,43 @@
+.blog_tlacitka{
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet-size) { 
+        display: flex; 
+    }
+
+    @media screen and (min-width: $PC-size) {
+     
+        padding: 0;
+    }
+}
+
+.blog_into{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.blog__tlacitka--boxy{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    max-width: 100px;
+    border: solid 1px black;
+    border-radius: $radius_table;
+    background-color: $quaternary-c;
+    padding: 2px 4px;
+    text-align: center;
+}
+
+.blog__tlacitka--a{
+    text-decoration: none;
+    padding: 5px;
+    color: $background-c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+    
+}
+
 .container-for-articles{
     padding: 0 $pad-mobile;
 
@@ -68,7 +108,8 @@
 
 .blog-container__heading a {
     text-decoration: none;
-    color: $quaternary-c;
+    color: $secondary-c;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blog-container__button{
@@ -90,6 +131,8 @@
 
 .blog-container__date{
     margin: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
 .blog-container__button a{

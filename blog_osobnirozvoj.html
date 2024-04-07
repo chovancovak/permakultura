@@ -1,0 +1,49 @@
+---
+layout: layouts/sablona.njk
+---
+
+<div class="container-for-articles">
+
+    <h2 class="blog-container-title">Blog</h2>
+
+    <div class="blog_tlacitka">
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog">Celý blog</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_dum">O domě</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_zahrada">O zahradě</a></p>
+        <p class="blog__tlacitka--boxy"><a class="blog__tlacitka--a" href="/blog_komunita">O komunitě</a></p>
+    </div>
+
+    <p class="blog_into">Nežijeme úplně běžně. Hledáme si svou cestu. Jsme spolu a jsme šťastní. Máme vše. Ale není to vždy lehké být svůj. Posilujeme se osobním rozvojem a vzděláváním. Je to krásná cesta! :-)</p>
+    
+    {% for osobnirust in collections.osobnirust | reverse %}
+
+    <div class="blog-container__article">
+        
+        <div class="blog-container__article-img">
+            <img class="table-blog__img" src={{ osobnirust.data.picture }} alt={{ osobnirust.data.picture_title }}>
+        </div>
+
+        <div class="blog-container__article-text">
+        
+            <h3 class="blog-container__heading">
+                <a href="{{ dum.url }}">{{ osobnirust.data.title }}</a>
+            </h3>
+
+            <p>
+                {{ osobnirust.data.perex }}
+            </p>
+
+            <p class="blog-container__date">
+                {{ osobnirust.data.datum }}
+            </p>
+
+
+            <button class="blog-container__button">
+                <a href="{{ osobnirust.url }}">Celý článek</a>
+            </button>
+
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
