@@ -716,6 +716,7 @@ h1 {
 @media screen and (min-width: 720px) {
   .blog_tlacitka {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1250px) {
@@ -739,6 +740,11 @@ h1 {
   background-color: #A0B187;
   padding: 2px 4px;
   text-align: center;
+}
+
+#blog__tlacitka--boxy-aktiv {
+  background-color: #4D5A46;
+  padding: 4px 5px;
 }
 
 .blog__tlacitka--a {
