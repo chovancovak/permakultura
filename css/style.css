@@ -312,6 +312,10 @@ h1 {
   color: #FAF2F2;
 }
 
+.intro_a-dark {
+  color: #4A4146;
+}
+
 .intro-offer--a {
   text-decoration: none;
   color: #eab148;
@@ -1361,35 +1365,23 @@ footer {
   }
 }
 
+.kouc__ne {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#kouc__ne--strong {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+}
+
 .a-koucovani {
   color: #4D5A46;
 }
 
 .p-koucovani {
   line-height: normal;
-}
-
-.con-intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (min-width: 720px) {
-  .con-intro {
-    display: inline;
-  }
-}
-
-.koucovani__intro--con {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (min-width: 720px) {
-  .koucovani__intro--con {
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 .koucovani__intro {
