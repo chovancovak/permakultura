@@ -1186,6 +1186,10 @@ h1 {
   color: black;
 }
 
+#textbackground {
+  color: #FAF2F2;
+}
+
 .pbold {
   font-weight: bold;
   margin: 30px 0;

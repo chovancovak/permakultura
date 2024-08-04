@@ -169,11 +169,17 @@
     }
 }
 
+
+
 .article_a{
     color: black;
 }
 
 //text
+
+#textbackground{
+    color: $background-c;
+}
 
 .pbold{
     font-weight: bold;
