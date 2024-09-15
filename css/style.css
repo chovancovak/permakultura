@@ -1498,7 +1498,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1250px) {
   .koucovani-container__ref {
     display: grid;
     grid-template-rows: 1fr;
@@ -1546,6 +1546,9 @@ footer {
   margin-top: -30px;
 }
 
+.img-skupinove-koucovani {
+  padding-bottom: 20px;
+}
 @media screen and (min-width: 720px) {
   .img-skupinove-koucovani {
     max-width: 450px;

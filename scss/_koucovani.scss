@@ -147,7 +147,7 @@
 
 .koucovani-container__ref{
    
-    @media screen and (min-width: $tablet-size) { 
+    @media screen and (min-width: $PC-size) { 
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -199,6 +199,8 @@
 }
 
 .img-skupinove-koucovani{
+
+    padding-bottom: 20px;
 
     @media screen and (min-width: $tablet-size) {
         max-width: 450px;
