@@ -15,18 +15,18 @@
 
 
 .intro_foto1{
-    background-image: url(/img/úvod/u_vany_text-mobil.jpg);
+    background-image: url(/img/úvod/na\ spirale2-mob.jpg);
     background-size:cover;
     height: 800px;
     margin-left: -100px;
 
     @media screen and (min-width: $tablet-size){
         margin-left: -80px;
-        background-image: url(/img/úvod/u_vany_text-tablet.jpg);
+        background-image: url(/img/úvod/na-spirale2-tab.jpg);
     }
 
     @media screen and (min-width: $PC-size){
-        background-image: url(/img/úvod/u_vany_text-PC.jpg);
+        background-image: url(/img/úvod/na\ spirale2.jpg);
         margin-left: 0;
     }
 
@@ -95,6 +95,10 @@
 
 #div_dark{
     background-color: $senary-c;
+}
+
+#div_dark2{
+    background-color: $secondary-c;
 }
 
 #text_sledujte_nas{
