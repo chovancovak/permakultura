@@ -1,0 +1,58 @@
+.div_domskola{
+    padding: 0  $pad-mobile 0  $pad-mobile;
+
+    
+    @media screen and (min-width: $tablet-size){   
+        padding: 0 $pad-tablet 0 $pad-tablet;
+    }
+
+    @media screen and (min-width: $PC-size) {
+        padding: 0 $pad-PC 0 $pad-PC;
+    }  
+}
+
+.domskola__h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $quaternary-c;
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.domskola-p{
+    padding: 10px 0;
+}
+
+
+.domskola_img_big{
+    max-width: 700px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.div-domskola_galerie{
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-rows: repeat(30);
+    gap: 5px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+    
+   
+    @media screen and (min-width: $tablet-size) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(1, auto);
+        
+        
+    }
+
+    @media screen and (min-width: $PC-size) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
+        gap:10px;
+        
+    }
+}

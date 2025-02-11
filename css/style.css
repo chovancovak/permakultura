@@ -141,6 +141,28 @@ h1 {
   }
 }
 
+.Toggle_EN_CZ {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding-right: 20px;
+}
+@media screen and (min-width: 720px) {
+  .Toggle_EN_CZ {
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .Toggle_EN_CZ {
+    padding-right: 180px;
+  }
+}
+
+.Toggle_EN_CZ-li {
+  border: 1px solid #849060;
+}
+
 .menu__checkbox {
   position: absolute;
   left: -9999px;
@@ -200,7 +222,7 @@ h1 {
 
 .menu__link:hover {
   background-color: #2aa2b2;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1775,4 +1797,60 @@ footer {
 
 .skupi_kouc_kde_kde {
   margin: 25px 0 10px 0;
+}
+
+.div_domskola {
+  padding: 0 20px 0 20px;
+}
+@media screen and (min-width: 720px) {
+  .div_domskola {
+    padding: 0 120px 0 120px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .div_domskola {
+    padding: 0 180px 0 180px;
+  }
+}
+
+.domskola__h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #A0B187;
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.domskola-p {
+  padding: 10px 0;
+}
+
+.domskola_img_big {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.div-domskola_galerie {
+  display: grid;
+  grid-template-columns: repeat(1);
+  grid-template-rows: repeat(30);
+  gap: 5px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 720px) {
+  .div-domskola_galerie {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(1, auto);
+  }
+}
+@media screen and (min-width: 1250px) {
+  .div-domskola_galerie {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
