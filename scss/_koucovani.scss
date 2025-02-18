@@ -184,9 +184,58 @@
     border-radius: 10%;
 }
 
-// .koucovani-container__ref--p-short{
-//     display: none;
-// }
+//reference
+.reviews-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    overflow: hidden;
+    justify-content: center;
+
+    @media screen and (min-width: $tablet-size){
+        max-width: 1200px;
+    }
+}
+
+.reviews-wrapper {
+    overflow: hidden;
+    width: 300px;
+
+    @media screen and (min-width: $tablet-size){
+        width: 600px;
+    }
+}
+
+.reviews {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.koucovani__review{
+    margin-top: 35px;
+    min-width: 300px;
+
+    @media screen and (min-width: $tablet-size){
+        margin-top: 0;
+    }
+
+}
+
+button {
+    background-color: $primary-c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+// skupinové koučování
 
 .kocouvani-offer-skupi-kouc-div{
     background-color: $primary-c;

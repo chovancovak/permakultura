@@ -1562,6 +1562,59 @@ footer {
   border-radius: 10%;
 }
 
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+  overflow: hidden;
+  justify-content: center;
+}
+@media screen and (min-width: 720px) {
+  .reviews-container {
+    max-width: 1200px;
+  }
+}
+
+.reviews-wrapper {
+  overflow: hidden;
+  width: 300px;
+}
+@media screen and (min-width: 720px) {
+  .reviews-wrapper {
+    width: 600px;
+  }
+}
+
+.reviews {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.koucovani__review {
+  margin-top: 35px;
+  min-width: 300px;
+}
+@media screen and (min-width: 720px) {
+  .koucovani__review {
+    margin-top: 0;
+  }
+}
+
+button {
+  background-color: #2aa2b2;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 .kocouvani-offer-skupi-kouc-div {
   background-color: #2aa2b2;
   width: 220px;

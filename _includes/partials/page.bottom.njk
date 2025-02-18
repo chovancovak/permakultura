@@ -5,32 +5,44 @@
     </footer>
     
 
+    <!-- ´potřeba přidat script i do aj verze!!! nebo dát vedle jako samostatný soubor -->
     <script>
-        // let toggle = document.querySelector('.toggle_swich-en-cz input')
-    
-        // let en = document.querySelector(".en")
+        const reviews = document.querySelector(".reviews");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
 
-        // let cz = document.querySelector(".cz")
+        let index = 0;
+        let reviewsPerPage = window.innerWidth >= 720 ? 2 : 1; // Počet recenzí na stránku podle šířky
+        const reviewWidth = 300; // Šířka jedné recenze
 
-        
+        // Funkce pro aktualizaci posunu
+        function updateCarousel() {
+            reviews.style.transform = `translateX(${-index * reviewWidth}px)`;
+        }
 
-        
-        //     toggle.addEventListener('click', () => {
-        //         let onOff = toggle.parentNode.querySelector('.onoff')
-                
-        //         onOff.textContent = toggle.checked ? 'CZ' : 'EN'
-                
+        // Tlačítko pro posun dopředu
+        nextBtn.addEventListener("click", () => {
+            if (index < reviews.children.length - reviewsPerPage) {
+                index += reviewsPerPage;
+                updateCarousel();
+            }
+        });
 
-        //         en.style.display= toggle.checked ? "block": "none"
-        //         cz.style.display= toggle.checked ? "none" : "block"
+        // Tlačítko pro posun dozadu
+        prevBtn.addEventListener("click", () => {
+            if (index > 0) {
+                index -= reviewsPerPage;
+                updateCarousel();
+            }
+        });
 
+        // Přepočítání při změně velikosti okna
+        window.addEventListener("resize", () => {
+            reviewsPerPage = window.innerWidth >= 720 ? 2 : 1; // Aktualizace podle šířky okna
+            index = 0; // Reset indexu pro správné zobrazení
+            updateCarousel();
+        });
 
-        //         if (!onOff || !en) {
-        //             console.error('Některé prvky nebyly nalezeny.');
-        //             return;
-        //         }
-        //     })
-       
     </script>
 
 </body>
